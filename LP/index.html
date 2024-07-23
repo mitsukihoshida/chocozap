@@ -5,31 +5,34 @@
     <body>
         <header>
             <img src="images/chocozapロゴ.jpeg" alt="チョコザップロゴ"/>
-            <!-- src="保存先  alt="テキストによる説明" -->
+            <!-- src="保存先  alt="画像が読み込めなかったときに表示するテキストによる説明" -->
+            <nav>
+                <p><a href="#service">サービス概要</a></p>
+                <p><a href="#service-detail">サービス詳細</a></p>
+                <p><a href="#Q&A">Q&A</a></p>
+                <p><a href="inquiry.html">問い合わせ</a></p>
+                <p><a href="#conpany-profile">会社概要</a></p>
+            </nav>
         </header>
 
         <main>
             <article><!-- チョコザップ記事 -->
-                <header><!-- サービス概要header -->
-                    <h1>
+                <section><!-- サービス概要header -->
+                    <h1 id="service">
                         サービス概要
                     </h1>
-                    <section>
-                        <!-- <h2> -->
+                        <p>
                             <strong><!-- 強調！！！ -->
-                                月額2980円 24時間・365日
+                                2980円 24時間・365日
                             </strong>
-                        <!-- </h2> -->
-                        <p>
+                            <br>
                             全店舗使い放題※
-                        </p>
-                        <p>
+                            <br>
                             ※使い放題はトレーニングマシンに限ります。
                         </p>
-                    </section>
-                </header>
+                </section>
                 <section><!-- サービス詳細section -->
-                    <h1>
+                    <h1 id="detail">
                         サービス詳細
                     </h1>
                     <section><!-- 全店舗section -->
@@ -95,7 +98,7 @@
                     </section>
                 </section>
                 <section><!-- 体験者の声section -->
-                    <h1>
+                    <h1 id="Q&A">
                         みんなの疑問を解決！
                     </h1>
                     <section>
@@ -206,7 +209,7 @@
                             <br><br><strong>RIZAPによる巡回も実施。</strong>
                         </p>
                         <p>
-                            ※カメラ設置箇所、設置台数、アイが反応する基準について、
+                            ※カメラ設置箇所、設置台数、AIが反応する基準について、
                             <br>　セキュリティ保全の観点からお問い合わせいただいても具体的な
                             <br>　回答は致し兼ねますので予めご了承ください。
                         </p>
@@ -222,6 +225,9 @@
 
             </article>
             <aside>
+                <h1 id="conpany-profile">
+                    会社概要
+                </h1>
                 <table>
                     <tr>
                         <th>
@@ -281,12 +287,15 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>
+                        <th rowspan="2">
                             グループ会社
                         </th>
                         <td>
                             RIZAPグループ株式会社
-                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                             <a href="https://www.rizapgroup.com/">
                                 https://www.rizapgroup.com/
                             </a>
