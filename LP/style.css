@@ -2,15 +2,14 @@
 * {
     margin: 0;
     padding: 0;
+    
     box-sizing: border-box;
   }
 
 /* html要素内の設定 */
 html {
-    /* text-align: center;
-    display: flex;
-    justify-content: center; */
-    width: 80%;
+
+    margin: auto;/* 左右の空白が同じになる（中央揃え） */
     height: auto;
     font-size: 100%;
     font-family: serif;
@@ -34,12 +33,27 @@ a{
     text-decoration: none;/* リンクの下線などをなくす */
 }
 
+ul{
+    list-style-position: inside;
+}
 
-.nav1 {
+header{
+    width: 100%;
     margin-bottom: 10px;
-    padding-bottom:10px;
     border-bottom: thick solid;
     border-color: rgba(25, 50, 120, 0.8);
+}
+
+main{
+    margin: auto;
+    text-align: justify;
+    /* width: 100%; */
+    /* height: auto;  */
+    /* background-color: ; */
+}
+
+.nav1 {
+    padding-bottom:10px;
     justify-content: center;
     display: flex; /* 小要素をインラインブロックにする */
     font-size: 20px;
@@ -60,17 +74,26 @@ aside{
     background-position: center;
 
 }
+table{
+    display: inline-block;
+    text-align: justify;
+}
+
+th{
+    padding-right:  20px;
+}
 
 /* 半透明の白の背景 */
 .aside{
+    color: white;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* asideの中のaタグを黒色に */
 aside a{
     
-    color: black;
+    color: white;
 }
 footer{
     width: 100%;
