@@ -4,6 +4,15 @@
         <meta charset="UTF-8" /><!--  meta要素は、ページの情報を定義する要素.「UTF-8」は、コンピュータでの文字の処理方法 -->
         <title>chocoZAPの問い合わせ</title>
         <meta name="description" content="chocoZAP事業の紹介・料金・問い合わせ">
+
+        <!-- googlefontsの記述 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+        
+
+        <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
         <header>
@@ -11,22 +20,22 @@
                 <img src="images/chocozapロゴ.jpeg" alt="チョコザップロゴ"/>
                 <!-- src="保存先  alt="画像が読み込めなかったときに表示するテキストによる説明" -->    
             </h1>
-            <nav>
-                <p><a href="#service">サービス概要</a></p>
-                <p><a href="#service-detail">サービス詳細</a></p>
-                <p><a href="#Q&A">Q&A</a></p>
-                <p><a href="inquiry.html">問い合わせ</a></p>
-                <p><a href="#conpany-profile">会社概要</a></p>
+            <nav class="header-list">
+                <p class="header-list-detail"><a href="#service">サービス概要</a></p>
+                <p class="header-list-detail"><a href="#service-detail">サービス詳細</a></p>
+                <p class="header-list-detail"><a href="#Q&A">Q&A</a></p>
+                <p class="header-list-detail"><a href="inquiry.html">問い合わせ</a></p>
+                <p class="header-list-detail"><a href="#conpany-profile">会社概要</a></p>
             </nav>
         </header>
 
         <main>
             <article><!-- チョコザップ記事 -->
                 <section><!-- サービス概要header -->
-                    <h1 id="service">
+                    <h2 id="service">
                         サービス概要
-                    </h1>
-                        <p>
+                    </h2>
+                        <p class="price">
                             <strong><!-- 強調！！！ -->
                                 2980円 24時間・365日
                             </strong>
@@ -118,17 +127,17 @@
                         <h3>
                             point1
                         </h3>
-                        <img src="images/Q&A1_point1-1.jpeg" alt="異変画像"/>
+                        <img class="img-point1"  src="images/Q&A1_point1-1.jpeg" alt="異変画像"/>
                         <p>
                             <strong>異変</strong><br>倒れている人、
                             <br>動かない人などを検知
                         </p>
-                        <img src="images/Q&A1_point1-2.jpeg" alt="検知画像"/>
+                        <img class="img-point1" src="images/Q&A1_point1-2.jpeg" alt="検知画像"/>
                         <p>
                             <strong>検知</strong><br>リアルタイムに
                             <br>スタッフに通知
                         </p>
-                        <img src="images/Q&A1_point1-3.jpeg" alt="緊急対応画像"/>
+                        <img class="img-point1"  src="images/Q&A1_point1-3.jpeg" alt="緊急対応画像"/>
                         <p>
                             <strong>緊急対応</strong><br>通報など
                             <br>然るべき対応を実施
@@ -140,7 +149,7 @@
                             <strong>トラブルになりやすい箇所は強化</strong>して
                             <br>モニタリングを行っています。
                         </p>
-                        <img src="images/Q&A1_point2.png"/>
+                        <img class="img-point2" src="images/Q&A1_point2.png"/>
                         <h3>
                             point3
                         </h3>
@@ -191,90 +200,92 @@
 
             </article>
             <aside>
-                <h1 id="conpany-profile">
-                    会社概要
-                </h1>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>
-                                社名
-                            </th>
-                            <td>
-                                RIZAP株式会社
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                所在地
-                            </th>
-                            <td>
-                                〒160-0023
-                                東京都新宿区西新宿8-17-1 住友不動産新宿グランドタワー36階
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                設立日
-                            </th>
-                            <td>
-                                平成22年5月7日
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                資本金
-                            </th>
-                            <td>
-                                1,000万円（2020年8月21日現在）
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                役員
-                            </th>
-                            <td>
-                                代表取締役社長　瀬戸 健
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                事業内容
-                            </th>
-                            <td>
-                                健康に関する研究、ボディメイク事業等
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                決算期
-                            </th>
-                            <td>
-                                3月
-                            </td>
-                        </tr>
-                        <tr>
-                            <th rowspan="2">
-                                グループ会社
-                            </th>
-                            <td>
-                                RIZAPグループ株式会社
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="https://www.rizapgroup.com/">
-                                    https://www.rizapgroup.com/
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <section class="aside">
+                    <h3 id="company-profile">
+                        会社概要
+                    </h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    社名
+                                </th>
+                                <td>
+                                    RIZAP株式会社
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    所在地
+                                </th>
+                                <td>
+                                    〒160-0023
+                                    東京都新宿区西新宿8-17-1 住友不動産新宿グランドタワー36階
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    設立日
+                                </th>
+                                <td>
+                                    平成22年5月7日
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    資本金
+                                </th>
+                                <td>
+                                    1,000万円（2020年8月21日現在）
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    役員
+                                </th>
+                                <td>
+                                    代表取締役社長　瀬戸 健
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    事業内容
+                                </th>
+                                <td>
+                                    健康に関する研究、ボディメイク事業等
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    決算期
+                                </th>
+                                <td>
+                                    3月
+                                </td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">
+                                    グループ会社
+                                </th>
+                                <td>
+                                    RIZAPグループ株式会社
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.rizapgroup.com/">
+                                        https://www.rizapgroup.com/
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </aside>
         </main>
 
         <footer>
-            <p>
+            <p class="footer-text">
                 copyright © chocoZAP
             </p>
         </footer>
