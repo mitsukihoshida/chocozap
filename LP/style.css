@@ -14,7 +14,14 @@ html {
     font-size: 100%;
     font-family: serif;
 }
-
+.img-point1{
+    width: auto;/* 100%なので画像は中央にくる */
+    height: 150px;/* autoにすることで縦横比を調整 */
+}
+.img-point2{
+    width: 100%;/* 100%なので画像は中央にくる */
+    height: auto;/* autoにすることで縦横比を調整 */
+}
 
 
 h1 {
@@ -22,9 +29,15 @@ h1 {
 }
 
 h2{
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    margin:10px auto;
+    font-size: 30px;
+    border-bottom: 8px solid #f7f7f7;
+    text-align: center;
+    line-height: 0.6;
+
+}
+h3{
+    margin: 10px;
 }
 
 a{
@@ -33,9 +46,9 @@ a{
     text-decoration: none;/* リンクの下線などをなくす */
 }
 
-ul{
+/* ul{
     list-style-position: inside;
-}
+} */
 
 header{
     width: 100%;
@@ -44,18 +57,31 @@ header{
     border-color: rgba(25, 50, 120, 0.8);
 }
 
-main{
+article ,form{
     margin: auto;
+    width: 60%;
+    padding: 10px;
     text-align: justify;
+    justify-content: center;/* 要素の横並び・中央寄せ */
     /* width: 100%; */
     /* height: auto;  */
     /* background-color: ; */
 }
 
+article p{
+    margin: 10px;
+}
+
+ul{
+    margin: 30px;
+    list-style:circle outside;
+}
+
+
 .nav1 {
     padding-bottom:10px;
     justify-content: center;
-    display: flex; /* 小要素をインラインブロックにする */
+    display: flex; /* 小要素をインラインブロックにする (横並び)*/
     font-size: 20px;
 }
 
@@ -63,8 +89,27 @@ main{
     margin-left: 2%;
     font-family: "fantasy";
 }
+.price strong{
+    font-size: 25px;
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+button{
+    width:auto;
+    
+    margin:10px auto;
+    padding: 5px;
+    font-size: 20px;
+    background-color: yellow;
+}
+
+button a{
+    color: black;
+}
 
 aside{
+    
     padding: 30px 10%;  /* 上下 左右 */
     /* 背景画像："url(画像のパス)" */
     background-image: url("images/chocozap背景画像1.jpeg"); 
@@ -106,3 +151,12 @@ footer{
 .footer-text{
     color: white;
 }
+
+form h2{
+    margin-bottom: 20px;
+}
+
+form label{
+    line-height: 3;
+}
+
