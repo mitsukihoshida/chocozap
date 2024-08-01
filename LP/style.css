@@ -15,8 +15,8 @@ html {
     font-family: serif;
 }
 .img-point1{
-    width: auto;/* 100%なので画像は中央にくる */
-    height: 150px;/* autoにすることで縦横比を調整 */
+    width: 100%;/* 100%なので画像は中央にくる */
+    height: auto;/* autoにすることで縦横比を調整 */
 }
 .img-point2{
     width: 100%;/* 100%なので画像は中央にくる */
@@ -27,6 +27,7 @@ html {
 h1 {
     text-align: center; /* <img>もインライン要素なのでテキストと同じ */
 }
+
 
 h2{
     margin:10px auto;
@@ -85,23 +86,104 @@ ul{
     margin-left: 2%;
     font-family: "fantasy";
 }
+
+.service-overview{
+    text-align: center;/* 小要素がinline-blockなのでjustyfy-contentではなくtext-aline */
+    margin-bottom: 80px;
+    /* border-bottom:4px dotted #d7d7d7; */
+}
+
+.service-overview-info{
+    /* margin: ; */
+    display: inline-block;
+    text-align: justify;/* 親要素がcenterなのでjustifyに */
+    padding: 20px ;
+}
+
+
 .price strong{
     font-size: 1.5rem;
     color: #ff0000;
     border-bottom: 2px solid #ff0000;
 }
 
+.service-detail-container{
+    margin: 25px auto ;
+    padding-bottom: 25px;
+    /* height: 314px; */
+    justify-content: center; /* display flexはblock要素なのでjustify-content */
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom:4px dotted #d7d7d7;
+}
+
+
+
+.service-detail-item{
+    margin: 10px;
+    height: 314px;
+}
+
+.QandA{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;/* 小要素を上から下に並べる */
+    /* justify-content: space-around;均等配置 */
+    border-bottom:4px dotted #d7d7d7;
+
+}
+
+.question{
+    padding: 5%;
+}
+
+
+
+.QandA-1-point1-container{
+    display: flex;
+    justify-content: center;/* 小要素を真ん中に */
+    /* flex-wrap: wrap;折り返し上から並べる */
+}
+
+.QandA-1-point1-item{
+    text-align: justify;
+}
+
+.QandA-1-point3-container{
+    display: flex;
+}
+
+.QandA-1-point3-item{
+
+}
+
+.QandA-1-point3-answer{
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: normal;
+    background-color: rgba(247, 239, 162, 0.5);
+}
+
+#security{
+    font-weight: bolder;
+}
+
+.button{
+    text-align: center;
+}
+
 button{
+    display: inline-block;
     width:auto;
-    
     margin:10px auto;
     padding: 5px;
     font-size: 20px;
-    background-color: #ffff00;
+    background-color: none;
 }
 
 button a{
-    color: 000000;
+    color: #000000;
 }
 
 aside{
