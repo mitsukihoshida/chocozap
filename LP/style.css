@@ -1,10 +1,10 @@
 /* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
-* {
+/* * {
     margin: 0;
     padding: 0;
     
     box-sizing: border-box;
-  }
+  } */
 
 /* html要素内の設定 */
 html {
@@ -241,3 +241,13 @@ form label{
     line-height: 3;
 }
 
+
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+.form-item{
+    
+}
