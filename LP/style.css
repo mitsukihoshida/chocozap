@@ -30,7 +30,7 @@ h1 {
 
 
 h2{
-    margin:10px auto;
+    margin-top:10px ;
     font-size: 1.8rem;
     border-bottom: 8px solid #f7f7f7;
     text-align: center;
@@ -75,7 +75,7 @@ ul{
 }
 
 
-.header-list {
+.header-lists {
     padding-bottom:10px;
     justify-content: center;
     display: flex; /* 小要素をインラインブロックにする (横並び)*/
@@ -89,7 +89,7 @@ ul{
 
 .service-overview{
     text-align: center;/* 小要素がinline-blockなのでjustyfy-contentではなくtext-aline */
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     /* border-bottom:4px dotted #d7d7d7; */
 }
 
@@ -107,8 +107,8 @@ ul{
     border-bottom: 2px solid #ff0000;
 }
 
-.service-detail-container{
-    margin: 25px auto ;
+.service-detail-containers{
+    margin: 25px auto 0px;
     padding-bottom: 25px;
     /* height: 314px; */
     justify-content: center; /* display flexはblock要素なのでjustify-content */
@@ -126,6 +126,10 @@ ul{
     height: 314px;
 }
 
+#QandA{
+    margin-top: 50px;
+}
+
 .QandA{
     padding: 10%;
     display: flex;
@@ -141,7 +145,7 @@ ul{
 
 
 
-.QandA-1-point1-container{
+.QandA-1-point1-containers{
     display: flex;
     justify-content: center;/* 小要素を真ん中に */
     /* flex-wrap: wrap;折り返し上から並べる */
@@ -151,7 +155,7 @@ ul{
     text-align: justify;
 }
 
-.QandA-1-point3-container{
+.QandA-1-point3-containers{
     display: flex;
 }
 
@@ -172,13 +176,13 @@ ul{
 }
 
 .button{
+    margin:40px auto;
     text-align: center;
 }
 
 button{
     display: inline-block;
     width:auto;
-    margin:40px auto;
     padding: 5px;
     font-size: 20px;
     background-color: none;
@@ -249,5 +253,5 @@ form label{
 }
 
 .form-item{
-    
+
 }
