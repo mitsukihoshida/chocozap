@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
         
-
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="style.css">
 
     </head>
@@ -20,7 +20,7 @@
                 <img src="images/chocozapロゴ.jpeg" alt="チョコザップロゴ"/>
                 <!-- src="保存先  alt="画像が読み込めなかったときに表示するテキストによる説明" -->    
             </h1>
-            <nav class="header-list">
+            <nav class="header-lists">
                 <p class="header-list-detail"><a href="#service">サービス概要</a></p>
                 <p class="header-list-detail"><a href="#service-detail">サービス詳細</a></p>
                 <p class="header-list-detail"><a href="#Q&A">Q&A</a></p>
@@ -31,10 +31,11 @@
 
         <main>
             <article><!-- チョコザップ記事 -->
-                <section><!-- サービス概要header -->
+                <section class="service-overview"><!-- サービス概要header -->
                     <h2 id="service">
                         サービス概要
                     </h2>
+                    <div class="service-overview-info">
                         <p class="price">
                             <strong><!-- 強調！！！ -->
                                 2980円 24時間・365日
@@ -44,134 +45,164 @@
                             <br>
                             ※使い放題はトレーニングマシンに限ります。
                         </p>
+                    </div>
                 </section>
-                <section><!-- サービス詳細section -->
+                <section class="service-detail"><!-- サービス詳細section -->
                     <h2 id="detail">
                         サービス詳細
                     </h2>
-                    <!-- <section>全店舗section -->
-                        <h3>
-                            全店舗
-                        </h3>
-                        <ul>
-                            <li>
-                                ジム
-                            </li>
-                            <li>
-                                スターターキット
-                            </li>
-                            <li>
-                                アプリ
-                            </li>
-                            <li>
-                                セルフエステ
-                            </li>
-                            <li>
-                                セルフネイル
-                            </li>
-                            <li>
-                                セルフホワイトニング
-                            </li>
-                            <li>
-                                セルフ脱毛
-                            </li>
-                            <li>
-                                マッサージチェア
-                            </li>
-                            <li>
-                                デスクバイク
-                            </li>
-                        </ul>
-                    <!-- </section> -->
-                    <!-- <section>1部店舗section -->
-                        <h3>
-                            1部店舗限定
-                        </h3>
-                        <ul>                            
-                            <li>
-                                マシンティラピス
-                            </li>
-                            <li>
-                                カラオケ
-                            </li>
-                            <li>
-                                アプリ
-                            </li>
-                            <li>
-                                ランドリー
-                            </li>
-                            <li>
-                                ドリンクバー
-                            </li>
-                            <li>
-                                ワークスペース
-                            </li>
-                            <li>
-                                ゴルフ
-                            </li>
-                    <!-- </section> -->
+                    <div class="service-detail-containers">
+                        <div class="service-detail-item"><!-- 全店舗section -->
+                            <h3>
+                                全店舗
+                            </h3>
+                            <ul>
+                                <li>
+                                    ジム
+                                </li>
+                                <li>
+                                    スターターキット
+                                </li>
+                                <li>
+                                    アプリ
+                                </li>
+                                <li>
+                                    セルフエステ
+                                </li>
+                                <li>
+                                    セルフネイル
+                                </li>
+                                <li>
+                                    セルフホワイトニング
+                                </li>
+                                <li>
+                                    セルフ脱毛
+                                </li>
+                                <li>
+                                    マッサージチェア
+                                </li>
+                                <li>
+                                    デスクバイク
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="service-detail-item">
+                            <h3>
+                                1部店舗限定
+                            </h3>
+                            <ul>                            
+                                <li>
+                                    マシンティラピス
+                                </li>
+                                <li>
+                                    カラオケ
+                                </li>
+                                <li>
+                                    アプリ
+                                </li>
+                                <li>
+                                    ランドリー
+                                </li>
+                                <li>
+                                    ドリンクバー
+                                </li>
+                                <li>
+                                    ワークスペース
+                                </li>
+                                <li>
+                                    ゴルフ
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
-                <!-- <section>体験者の声section -->
-                    <h2 id="Q&A">
+                <section>
+                    <h2 id="QandA">
                         みんなの疑問を解決！
                     </h2>
+                    
+                    <div class="QandA">
+                        <div class="question">
+                            <h3>
+                                急な体調不良や怪我をしたら、どうすればいいの？
+                            </h3>
+                            <p>
+                                A. チョコザップ店舗内には、平均<em>10台</em>のAIによる監視カメラを設置。 
+                                このAIカメラは<em>24時間365日</em>遠隔監視センターへ連携されています。
+                            </p>
+                        </div>
                         
-                    <section>
-                        <h3>
-                            急な体調不良や怪我をしたら、<br>どうすればいいの？
-                        </h3>
-                        <p>
-                            A. チョコザップ店舗内には、平均<em>10台</em>のAIによる監視カメラを設置。 
-                            <br>このAIカメラは<em>24時間365日</em>遠隔監視センターへ連携されています。
-                        </p>
                         <h3>
                             point1
                         </h3>
-                        <img class="img-point1"  src="images/Q&A1_point1-1.jpeg" alt="異変画像"/>
-                        <p>
-                            <strong>異変</strong><br>倒れている人、
-                            <br>動かない人などを検知
-                        </p>
-                        <img class="img-point1" src="images/Q&A1_point1-2.jpeg" alt="検知画像"/>
-                        <p>
-                            <strong>検知</strong><br>リアルタイムに
-                            <br>スタッフに通知
-                        </p>
-                        <img class="img-point1"  src="images/Q&A1_point1-3.jpeg" alt="緊急対応画像"/>
-                        <p>
-                            <strong>緊急対応</strong><br>通報など
-                            <br>然るべき対応を実施
-                        </p>
+                        
+                        <div class="QandA-1-point1-containers">
+                            <div class="QandA-1-point1-item">
+                                <img class="img-point1"  src="images/Q&A1_point1-1.jpeg" alt="異変画像"/>
+                                <p>
+                                    <strong>異変</strong><br>倒れている人、
+                                    <br>動かない人などを検知
+                                </p>
+                            </div>
+                            <div class="QandA-1-point1-item">
+                                <img class="img-point1" src="images/Q&A1_point1-2.jpeg" alt="検知画像"/>
+                                <p>
+                                    <strong>検知</strong><br>リアルタイムに
+                                    <br>スタッフに通知
+                                </p>
+                            </div>
+                            <div class="QandA-1-point1-item">
+                                <img class="img-point1"  src="images/Q&A1_point1-3.jpeg" alt="緊急対応画像"/>
+                                <p>
+                                    <strong>緊急対応</strong><br>通報など
+                                    <br>然るべき対応を実施
+                                </p>
+                            </div>
+                        </div>
+                            
                         <h3>
                             point2
                         </h3>
-                        <p>
-                            <strong>トラブルになりやすい箇所は強化</strong>して
-                            <br>モニタリングを行っています。
-                        </p>
-                        <img class="img-point2" src="images/Q&A1_point2.png"/>
+                            <p>
+                                <strong>トラブルになりやすい箇所は強化</strong>して
+                                <br>モニタリングを行っています。
+                            </p>
+                            <img class="img-point2" src="images/Q&A1_point2.png"/>
                         <h3>
                             point3
                         </h3>
-                        <p>
-                            <strong>全店舗に24時間365日繋がる</strong>
-                            <br>緊急連絡先も掲示。
-                            <br><br><strong>RIZAPによる巡回も実施。</strong>
-                        </p>
-                        <p>
-                            ※カメラ設置箇所、設置台数、アイが反応する基準について、
-                            <br>　セキュリティ保全の観点からお問い合わせいただいても具体的な
-                            <br>　回答は致し兼ねますので予めご了承ください。
-                        </p>
-                    </section>
-                    <section>
-                        <h3>
-                            無人店舗だと、<br>衛生面が気になる•••
-                        </h3>
-                        <p>
-                            A. 安全安心で清潔感のある空間を維持するために
-                            <br>清掃対策・感染症対策を実施しております。
-                        </p>
+                            <p class="QandA-1-point3-answer">
+                                <strong>全店舗に24時間365日繋がる</strong>
+                                <br>緊急連絡先も掲示。
+                                <br><br><strong>RIZAPによる巡回も実施。</strong>
+                            </p>
+                            <div class="QandA-1-point3-containers">
+                                <div class="QandA-1-point3-item">
+                                    <p>
+                                        ※
+                                    </p>
+                                </div>
+                                <div class="QandA-1-point3-item">
+                                    <p id="security">    
+                                        カメラ設置箇所、設置台数、AIが反応する基準について、
+                                    </p>
+                                    <p>
+                                        セキュリティ保全の観点からお問い合わせいただいても具体的な
+                                        回答は致し兼ねますので予めご了承ください。
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="QandA">
+                        <div class="question">
+                            <h3>
+                                無人店舗だと、<br>衛生面が気になる•••
+                            </h3>
+                            <p>
+                                A. 安全安心で清潔感のある空間を維持するために
+                                <br>清掃対策・感染症対策を実施しております。
+                            </p>
+                        </div>
                         <p>
                             <感染症対策>
                         </p>
@@ -188,14 +219,16 @@
                             平均1.7回/日の頻度で清掃を行なっています。<br>
                             ※2023年10月調べ
                         </p>
-                    </section>
-                <!-- </section> -->
+                    </div>
+                </section>
                 <section>
-                    <button>
-                        <a href="inquiry.html">
-                            お問い合わせはこちら
-                        </a>
-                    </button>
+                    <div class="button">
+                        <button>
+                            <a href="inquiry.html">
+                                お問い合わせはこちら
+                            </a>
+                        </button>
+                    </div>
                 </section>
 
             </article>
