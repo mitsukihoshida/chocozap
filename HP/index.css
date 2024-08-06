@@ -1,0 +1,73 @@
+@charset "UTF-8"; /* コードの文字化けを防ぐ */
+
+/* 共通部 */
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans","BIZ UDPGothic","sans-serif";
+    line-height: 1.7;
+    color:#432
+}
+
+a{
+    text-decoration: none;  /* 下線部をなくす */
+}
+
+img{
+    max-width: 100%; /* 画像の大きさが親要素よりも大きくなることを防ぐ */
+}
+
+/* レイアウト */
+.align-center{
+    text-align: center;
+}
+
+/* 見出し */
+.font-english{
+    /* font-family:"メイリオ","Meiryo",sans-serif; */
+    font-weight: bold;
+}
+
+.page-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.4;
+}
+
+/* header */
+header{
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: thick solid;
+    border-color: rgba(25, 50, 120, 0.8);
+;
+
+}
+
+.page-header{
+    padding: .5rem;
+}
+
+.logo{
+    width:210px
+    
+}
+
+.list-containers{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.list-containers a{
+    color: #6c6b6b;
+}
+
+.list-containers a:hover/* カーソルを持ってくると変わる設定 */{
+    color:#ffcc00
+}
