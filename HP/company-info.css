@@ -75,6 +75,41 @@ html{
         color:#ffcc00
     }
 
+/* article */
+    article{
+    
+        padding: 30px 10%;  /* 上下 左右 */
+        /* 背景画像："url(画像のパス)" */
+        background-image: url("images/aside-会社概要背景.jpeg"); 
+        /* 画像の縦横比を維持したまま、領域全体をおおうサイズで伸縮される（画像の表示されない部分も発生） */
+        background-size: cover;
+        /* 画像の表示させたい部分 */
+        background-position: center;
+    
+    }
+    
+    table{
+        display: inline-block;
+        text-align: justify;
+    }
+    
+    th{
+        padding-right:  20px;
+    }
+    
+    /* 半透明の白の背景 */
+    .aside{
+        color: #ffffff;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    /* asideの中のaタグを黒色に */
+    aside a{
+        
+        color: #ffffff;
+    }
+
 /* button */
     #security{
         font-weight: bolder;
