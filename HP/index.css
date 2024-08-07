@@ -98,6 +98,11 @@
         margin-top: .5rem;
     }
 
+
+
+
+
+
     .img-point1{
         width: 100%;/* 100%なので画像は中央にくる */
         height: auto;/* autoにすることで縦横比を調整 */
@@ -160,9 +165,9 @@
         margin: 25px auto 0px;
         padding-bottom: 25px;
         /* height: 314px; */
-        justify-content: center; /* display flexはblock要素なのでjustify-content */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        justify-content:center; /* display flexはblock要素なのでjustify-content */
+        display: flex;
+        /* grid-template-columns: 1fr 1fr ; */
         gap: 10px;
         /* flex-wrap: wrap; */
         border-bottom:4px dotted #d7d7d7;
@@ -171,8 +176,12 @@
     
     
     .service-detail-item{
-        margin: 10px;
+        width: 40%;
         height: 314px;
+    }
+
+    .service-detail-item h4{
+        margin: 10px auto;
     }
     
     #QandA{
@@ -220,15 +229,16 @@
         background-color: rgba(247, 239, 162, 0.5);
     }
     
+/* button */
     #security{
         font-weight: bolder;
     }
-    
+
     .button{
         margin:40px auto;
         text-align: center;
     }
-    
+
     button{
         display: inline-block;
         width:auto;
@@ -236,10 +246,11 @@
         font-size: 20px;
         background-color: none;
     }
-    
+
     button a{
         color: #000000;
     }
+
     
     aside{
         
@@ -274,6 +285,8 @@
         
         color: #ffffff;
     }
+
+/* footer */
     footer{
         width: 100%;
         height: 100px;
