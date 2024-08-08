@@ -1,0 +1,151 @@
+@charset "UTF-8"; /* コードの文字化けを防ぐ */
+/* 共通 */
+html{
+    font-size: 100%;
+}
+
+    body{
+        font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",
+                        "BIZ UDPGothic","sans-serif";
+        font-weight: bold;
+        line-height: 1.7;
+        color:#432
+
+    }
+
+    a{
+        text-decoration: none;  /* 下線部をなくす */
+    }
+
+    img{
+        max-width: 100%; /* 画像の大きさが親要素よりも大きくなることを防ぐ */
+    }
+
+    h3 {
+        margin-top:10px ;
+        font-size: 1.8rem;
+        /* border-bottom: 8px solid #f7f7f7; */
+        text-align: center;
+        line-height: 0.6;
+        /* font-family: "M PLUS Rounded 1c", sans-serif; */
+        font-weight: 700;
+        font-style: normal;
+
+    }
+    h4{
+        margin: 10px;
+    }
+    
+/* レイアウト */
+.align-center{
+    text-align: center;
+}
+
+/* 見出し */
+    .font{
+        font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",
+        "BIZ UDPGothic","sans-serif";
+        font-weight: bold;
+    }
+
+/* header */
+    header{
+        width: 100%;
+        margin-bottom: 10px;
+        border-bottom: thick solid;
+        border-color: rgba(25, 50, 120, 0.8);
+        padding: .5rem;
+    ;
+
+    }
+
+    .list-containers{
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        font-size: 1.5rem;
+        list-style: none;
+    }
+
+    .list-containers a{
+        color: #6c6b6b;
+    }
+
+    .list-containers a:hover/* カーソルを持ってくると変わる設定 */{
+        color:#ffcc00
+    }
+
+/* article */
+    article{
+    
+        padding: 30px 10%;  /* 上下 左右 */
+        /* 背景画像："url(画像のパス)" */
+        background-image: url("images/aside-会社概要背景.jpeg"); 
+        /* 画像の縦横比を維持したまま、領域全体をおおうサイズで伸縮される（画像の表示されない部分も発生） */
+        background-size: cover;
+        /* 画像の表示させたい部分 */
+        background-position: center;
+    
+    }
+    
+    table{
+        display: inline-block;
+        text-align: justify;
+    }
+    
+    th{
+        width: 120px;
+        padding-right:  20px;
+    }
+    
+    td{
+        width: auto;
+    }
+    /* 半透明の白の背景 */
+    .aside{
+        color: #ffffff;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    /* asideの中のaタグを黒色に */
+    aside a{
+        
+        color: #ffffff;
+    }
+
+/* button */
+    #security{
+        font-weight: bolder;
+    }
+
+    .button{
+        margin:40px auto;
+        text-align: center;
+    }
+
+    button{
+        display: inline-block;
+        width:auto;
+        padding: 5px;
+        font-size: 20px;
+        background-color: none;
+    }
+
+    button a{
+        color: #000000;
+    }
+
+
+/* footer */
+    footer{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 100px; /* 行の高さ */
+        background-color: #848282;
+    }
+
+    .footer-text{
+        color: #ffffff;
+    }

@@ -1,43 +1,55 @@
-<!DOCTYPE html><!-- DOCTYPE宣言 -->
-<html lang="ja"><!--　HTML文書であることを示す要素  -->
+<!DOCTYPE html>
+<html lamg="ja">
     <head>
-        <meta charset="UTF-8" /><!--  meta要素は、ページの情報を定義する要素.「UTF-8」は、コンピュータでの文字の処理方法 -->
-        <title>chocoZAPの問い合わせ</title>
+        <meta charset="UTF-8">
+        <title>chocoZAP-HP</title>
         <meta name="description" content="chocoZAP事業の紹介・料金・問い合わせ">
-
         <!-- viewport設定 -->
         <meta name="viewport" content="width=devise-width, initial-scale=1">
 
-        <!-- googlefontsの記述 -->
+        <!-- CSSの記述 -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットCSS style.cssよりも上に-->
+        <link rel="stylesheet" href="index.css">
+
+        <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットCSS style.cssよりも上に-->
-        <link rel="stylesheet" href="style.css">
 
     </head>
     <body>
         <header>
-            <h1>
+            <h1 class="align-center">
                 <img src="images/chocozapロゴ.jpeg" alt="チョコザップロゴ"/>
                 <!-- src="保存先  alt="画像が読み込めなかったときに表示するテキストによる説明" -->    
             </h1>
             <nav class="header-lists">
-                <p class="header-list-detail"><a href="#service">サービス概要</a></p>
-                <p class="header-list-detail"><a href="#service-detail">サービス詳細</a></p>
-                <p class="header-list-detail"><a href="#Q&A">Q&A</a></p>
-                <p class="header-list-detail"><a href="inquiry.html">問い合わせ</a></p>
-                <p class="header-list-detail"><a href="#conpany-profile">会社概要</a></p>
+                <ul class="list-containers font">
+                    <li class="header-list-detail"><a href="service.html">サービス概要</a></li>
+                    <li class="header-list-detail"><a href="service.html#service-detail">サービス詳細</a></li>
+                    <li class="header-list-detail"><a href="QandA.html">Q&A</a></li>
+                    <li class="header-list-detail"><a href="inquiry.html">問い合わせ</a></li>
+                    <li class="header-list-detail"><a href="company-info.html">会社概要</a></li>
+                </ul>
             </nav>
         </header>
-
         <main>
+            <h2 class="page-title font">ようこそchocoZAPへ<br>今なら初期費用<strong>０円！！</strong></h2>
+            <section class="page-message">
+                <h3 class="font">chocoZAPについて</h3>
+                <p>
+                    chocoZAP (チョコザップ) は体も心も健康になれる、スマートライフジムです。
+                    使えば使うほど、特別だったものが身近なものに変わり、充実した日常になる！
+                    月額2,980円 (税込3,278円) で、ジムやアプリによる健康アドバイス、美容、
+                    アミューズメントなどが追加料金なしでご利用いただけます。
+                </p>
+            </section>
             <article><!-- チョコザップ記事 -->
                 <section class="service-overview"><!-- サービス概要header -->
-                    <h2 id="service">
+                    <h3>
                         サービス概要
-                    </h2>
+                    </h3>
                     <div class="service-overview-info">
                         <p class="price">
                             <strong><!-- 強調！！！ -->
@@ -51,14 +63,14 @@
                     </div>
                 </section>
                 <section class="service-detail"><!-- サービス詳細section -->
-                    <h2 id="detail">
+                    <h3 id="detail">
                         サービス詳細
-                    </h2>
+                    </h3>
                     <div class="service-detail-containers">
                         <div class="service-detail-item"><!-- 全店舗section -->
-                            <h3>
+                            <h4>
                                 全店舗
-                            </h3>
+                            </h4>
                             <ul>
                                 <li>
                                     ジム
@@ -90,9 +102,9 @@
                             </ul>
                         </div>
                         <div class="service-detail-item">
-                            <h3>
+                            <h4>
                                 1部店舗限定
-                            </h3>
+                            </h4>
                             <ul>                            
                                 <li>
                                     マシンティラピス
@@ -120,24 +132,24 @@
                     </div>
                 </section>
                 <section>
-                    <h2 id="QandA">
+                    <h3>
                         みんなの疑問を解決！
-                    </h2>
+                    </h3>
                     
                     <div class="QandA">
                         <div class="question">
-                            <h3>
+                            <h4>
                                 急な体調不良や怪我をしたら、どうすればいいの？
-                            </h3>
+                            </h4>
                             <p>
                                 A. チョコザップ店舗内には、平均<em>10台</em>のAIによる監視カメラを設置。 
                                 このAIカメラは<em>24時間365日</em>遠隔監視センターへ連携されています。
                             </p>
                         </div>
                         
-                        <h3>
+                        <h4>
                             point1
-                        </h3>
+                        </h4>
                         
                         <div class="QandA-1-point1-containers">
                             <div class="QandA-1-point1-item">
@@ -163,17 +175,17 @@
                             </div>
                         </div>
                             
-                        <h3>
+                        <h4>
                             point2
-                        </h3>
+                        </h4>
                             <p>
                                 <strong>トラブルになりやすい箇所は強化</strong>して
                                 <br>モニタリングを行っています。
                             </p>
                             <img class="img-point2" src="images/Q&A1_point2.png"/>
-                        <h3>
+                        <h4>
                             point3
-                        </h3>
+                        </h4>
                             <p class="QandA-1-point3-answer">
                                 <strong>全店舗に24時間365日繋がる</strong>
                                 <br>緊急連絡先も掲示。
@@ -198,9 +210,9 @@
                     </div>
                     <div class="QandA">
                         <div class="question">
-                            <h3>
+                            <h4>
                                 無人店舗だと、<br>衛生面が気になる•••
-                            </h3>
+                            </h4>
                             <p>
                                 A. 安全安心で清潔感のある空間を維持するために
                                 <br>清掃対策・感染症対策を実施しております。
@@ -235,95 +247,13 @@
                 </section>
 
             </article>
-            <aside>
-                <section class="aside">
-                    <h3 id="company-profile">
-                        会社概要
-                    </h3>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>
-                                    社名
-                                </th>
-                                <td>
-                                    RIZAP株式会社
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    所在地
-                                </th>
-                                <td>
-                                    〒160-0023
-                                    東京都新宿区西新宿8-17-1 住友不動産新宿グランドタワー36階
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    設立日
-                                </th>
-                                <td>
-                                    平成22年5月7日
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    資本金
-                                </th>
-                                <td>
-                                    1,000万円（2020年8月21日現在）
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    役員
-                                </th>
-                                <td>
-                                    代表取締役社長　瀬戸 健
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    事業内容
-                                </th>
-                                <td>
-                                    健康に関する研究、ボディメイク事業等
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    決算期
-                                </th>
-                                <td>
-                                    3月
-                                </td>
-                            </tr>
-                            <tr>
-                                <th rowspan="2">
-                                    グループ会社
-                                </th>
-                                <td>
-                                    RIZAPグループ株式会社
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="https://www.rizapgroup.com/">
-                                        https://www.rizapgroup.com/
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </aside>
+    
         </main>
-
         <footer>
             <p class="footer-text">
                 copyright © RIZAP GROUP
             </p>
         </footer>
     </body>
+
 </html>

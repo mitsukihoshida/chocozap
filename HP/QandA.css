@@ -1,0 +1,165 @@
+@charset "UTF-8"; /* コードの文字化けを防ぐ */
+/* 共通 */
+html{
+    font-size: 100%;
+}
+
+    body{
+        font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",
+                        "BIZ UDPGothic","sans-serif";
+        font-weight: bold;
+        line-height: 1.7;
+        color:#432
+
+    }
+
+    a{
+        text-decoration: none;  /* 下線部をなくす */
+    }
+
+    img{
+        max-width: 100%; /* 画像の大きさが親要素よりも大きくなることを防ぐ */
+    }
+
+    h3 {
+        margin-top:10px ;
+        font-size: 1.8rem;
+        border-bottom: 8px solid #f7f7f7;
+        text-align: center;
+        line-height: 0.6;
+        /* font-family: "M PLUS Rounded 1c", sans-serif; */
+        font-weight: 700;
+        font-style: normal;
+        max-width: 736px;
+
+    }
+    h4{
+        margin: 10px;
+    }
+    
+/* レイアウト */
+.align-center{
+    text-align: center;
+}
+
+/* 見出し */
+.font{
+    font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",
+    "BIZ UDPGothic","sans-serif";
+    font-weight: bold;
+}
+
+/* header */
+header{
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: thick solid;
+    border-color: rgba(25, 50, 120, 0.8);
+    padding: .5rem;
+;
+
+}
+
+.list-containers{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.list-containers a{
+    color: #6c6b6b;
+}
+
+.list-containers a:hover/* カーソルを持ってくると変わる設定 */{
+    color:#ffcc00
+}
+
+/* button */
+#security{
+    font-weight: bolder;
+}
+
+.button{
+    margin:40px auto;
+    text-align: center;
+}
+
+button{
+    display: inline-block;
+    width:auto;
+    padding: 5px;
+    font-size: 20px;
+    background-color: none;
+}
+
+button a{
+    color: #000000;
+}
+
+/* QandA */
+.QandA-width{
+    margin: auto;
+    max-width: 736px;
+    padding: 10px;
+    text-align: justify;
+    justify-content: center;/* 要素の横並び・中央寄せ */
+}
+
+.QandA{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;/* 小要素を上から下に並べる */
+    /* justify-content: space-around;均等配置 */
+    border-bottom:4px dotted #d7d7d7;
+
+}
+
+.question{
+    padding: 5%;
+}
+
+
+
+.QandA-1-point1-containers{
+    display: flex;
+    justify-content: center;/* 小要素を真ん中に */
+    /* flex-wrap: wrap;折り返し上から並べる */
+}
+
+.QandA-1-point1-item{
+    text-align: justify;
+}
+
+.QandA-1-point3-containers{
+    display: flex;
+}
+
+.QandA-1-point3-item{
+
+}
+
+.QandA-1-point3-answer{
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: normal;
+    background-color: rgba(247, 239, 162, 0.5);
+}
+
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px; /* 行の高さ */
+    background-color: #848282;
+}
+
+.footer-text{
+    color: #ffffff;
+}
