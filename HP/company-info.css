@@ -24,7 +24,7 @@ html{
     h3 {
         margin-top:10px ;
         font-size: 1.8rem;
-        border-bottom: 8px solid #f7f7f7;
+        /* border-bottom: 8px solid #f7f7f7; */
         text-align: center;
         line-height: 0.6;
         /* font-family: "M PLUS Rounded 1c", sans-serif; */
@@ -94,9 +94,13 @@ html{
     }
     
     th{
+        width: 120px;
         padding-right:  20px;
     }
     
+    td{
+        width: auto;
+    }
     /* 半透明の白の背景 */
     .aside{
         color: #ffffff;

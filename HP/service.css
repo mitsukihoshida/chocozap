@@ -9,8 +9,9 @@ html{
                         "BIZ UDPGothic","sans-serif";
         font-weight: bold;
         line-height: 1.7;
-        color:#432
-
+        color:#432;
+        /* max-width: 736px; */
+    
     }
 
     a{
@@ -22,7 +23,7 @@ html{
     }
 
     h3 {
-        margin-top:10px ;
+        margin-top:30px ;
         font-size: 1.8rem;
         border-bottom: 8px solid #f7f7f7;
         text-align: center;
@@ -55,7 +56,7 @@ html{
         border-bottom: thick solid;
         border-color: rgba(25, 50, 120, 0.8);
         padding: .5rem;
-    ;
+    
 
     }
 
@@ -73,6 +74,88 @@ html{
 
     .list-containers a:hover/* カーソルを持ってくると変わる設定 */{
         color:#ffcc00
+    }
+
+    /* ページメッセージ */
+    .page-title/* 共通はまとめる */
+    {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 2rem;
+        line-height: 1.4;
+    }
+
+    .page-message{
+        max-width: 736px;
+        padding: 0 1.5rem;
+        margin: 3rem auto 4rem;
+    }
+
+    .page-message p{
+        font-weight: normal;
+        margin-top: .5rem;
+    }
+
+
+
+/* service */
+article ,form{
+    margin: auto;
+    max-width: 736px;
+    padding: 10px;
+    text-align: justify;
+    justify-content: center;/* 要素の横並び・中央寄せ */
+    /* width: 100%; */
+    /* height: auto;  */
+    /* background-color: ; */
+}
+
+article p{
+    margin: 10px;
+}
+
+ul{
+    margin: 30px;
+    list-style:circle outside;
+}
+
+    .service-overview{
+        text-align: center;/* 小要素がinline-blockなのでjustyfy-contentではなくtext-aline */
+        /* margin-bottom: 80px; */
+        /* border-bottom:4px dotted #d7d7d7; */
+    }
+    
+    .service-overview-info{
+        /* margin: ; */
+        display: inline-block;
+        text-align: justify;/* 親要素がcenterなのでjustifyに */
+        padding: 20px ;
+    }
+    
+    
+    .price strong{
+        font-size: 1.5rem;
+        color: #ff0000;
+        border-bottom: 2px solid #ff0000;
+    }
+    
+    .service-detail-containers{
+        margin: 25px auto 0px;
+        padding-bottom: 25px;
+        /* height: 314px; */
+        justify-content: center; /* display flexはblock要素なのでjustify-content */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        /* flex-wrap: wrap; */
+        border-bottom:4px dotted #d7d7d7;
+    }
+    
+    
+    
+    .service-detail-item{
+        margin: 10px;
+        height: 314px;
     }
 
 /* button */

@@ -30,6 +30,7 @@ html{
         /* font-family: "M PLUS Rounded 1c", sans-serif; */
         font-weight: 700;
         font-style: normal;
+        max-width: 736px;
 
     }
     h4{
@@ -96,6 +97,58 @@ button{
 button a{
     color: #000000;
 }
+
+/* QandA */
+.QandA-width{
+    margin: auto;
+    max-width: 736px;
+    padding: 10px;
+    text-align: justify;
+    justify-content: center;/* 要素の横並び・中央寄せ */
+}
+
+.QandA{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;/* 小要素を上から下に並べる */
+    /* justify-content: space-around;均等配置 */
+    border-bottom:4px dotted #d7d7d7;
+
+}
+
+.question{
+    padding: 5%;
+}
+
+
+
+.QandA-1-point1-containers{
+    display: flex;
+    justify-content: center;/* 小要素を真ん中に */
+    /* flex-wrap: wrap;折り返し上から並べる */
+}
+
+.QandA-1-point1-item{
+    text-align: justify;
+}
+
+.QandA-1-point3-containers{
+    display: flex;
+}
+
+.QandA-1-point3-item{
+
+}
+
+.QandA-1-point3-answer{
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: normal;
+    background-color: rgba(247, 239, 162, 0.5);
+}
+
+
 
 
 /* footer */
