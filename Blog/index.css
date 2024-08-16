@@ -1,0 +1,237 @@
+@charset "UTF-8"; /* コードの文字化けを防ぐ */
+
+/* 共通部 */
+    html{
+        font-size: 100%;
+    }
+
+    header, main{
+        /* width: 60%; */
+        font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",
+                        "BIZ UDPGothic","sans-serif";
+        font-weight: bold;
+        line-height: 1.7;
+        color:#432;
+        padding: 0 5%;
+
+
+    }
+    /* 
+    a{
+        text-decoration: none;  下線部をなくす
+    } */
+
+    ul{
+        margin: 15px auto ;
+        list-style:circle inside;
+    }
+
+    img{
+        max-width: 100%; /* 画像の大きさが親要素よりも大きくなることを防ぐ */
+    }
+
+    h2 {
+        margin-top:10px ;
+        font-size: 1.8rem;
+        border-bottom: 8px solid #f7f7f7;
+        text-align: center;
+        line-height: 0.6;
+        /* font-family: "M PLUS Rounded 1c", sans-serif; */
+        font-weight: 700;
+        font-style: normal;
+    
+    }
+    
+
+/* header */
+    header{
+        width: 100%;
+        margin-bottom: 10px;
+        border-bottom: thick solid;
+        border-color: rgba(25, 50, 120, 0.8);
+        padding: .5rem;
+        text-align: center;
+
+    }
+
+/* body */
+    .point-containers{
+        display:block;
+
+    }
+
+    .point-item{
+        text-align: center;/* 画像を真ん中に */
+    }
+
+    .point-item p{
+        text-align: center;/* textを真ん中に */
+    }
+
+    .img-point1{
+        width: 100%;/* 100%なので画像は中央にくる */
+        height: auto;/* autoにすることで縦横比を調整 */
+    }
+    .img-point2{
+       margin: 0 auto;
+        width: 80%;/* 100%なので画像は中央にくる */
+        height: auto;/* autoにすることで縦横比を調整 */
+    }
+
+    
+    .point{
+        margin-top: 30px;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+        background-color: beige;
+    }
+
+    #QandA{
+        margin-top: 50px;
+    }
+
+    .QandA{
+        padding: 10px auto;
+        display: flex;
+        flex-direction: column;
+        border-bottom:4px dotted #d7d7d7;
+    }
+
+    .question-answer{
+        padding: 0 5%;
+    }
+
+    .question{
+        margin: 25px auto 10px;
+        padding: 10px;
+        font-size: 1.8rem;
+        background-color: beige;
+    }
+
+    .QandA-1-point1-containers{
+        display: flex;
+        justify-content: space-around;/* 均等に */
+        /* flex-wrap: wrap;折り返し上から並べる */
+    }
+    
+    .QandA-1-point1-item{
+        
+        text-align: justify;
+    }
+
+    .QandA-1-point1-item p{
+        width: 90%;
+    }
+
+    .QandA-1-point3-answers{
+        margin: auto;
+        display: flex;
+        flex-direction: column;/* 小要素を上から下に並べる */
+        justify-content: center;
+    }
+
+    .QandA-1-point3-answers-item
+    {
+        margin: auto;
+        text-align:justify ;
+    }
+
+    .QandA-1-point3-containers{
+        justify-content: center;    
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .QandA-idea-containers{
+        margin: auto;
+        padding: 5%;
+    }
+
+    .QandA-idea-item{
+        max-width: 400px;
+    }
+
+    .notes{
+        margin-top: 15px;
+        font-size: .8rem;
+    }
+    .measures{
+        font-size: 1.2rem;
+    }
+/* footer */
+    .info{
+        width: 100%;
+        max-width: 544px;/* 最大でも544pxの幅(width100%と基本セット) */
+        margin: 1.5rem auto 0;
+        padding: 0 1.5rem;
+        border-spacing: 0;
+    }
+
+    .info th , .info td{
+        border-bottom: 1px solid #d7d7d7;
+    }
+
+    .copyright{
+        font-family: "Hiragino Kaku Gothic ProN","Hiragino Sans",
+                        "BIZ UDPGothic","sans-serif";
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 100px; /* 行の高さ */
+        background-color: #848282;
+        color: #ffffff;
+    }
+
+@media(min-width:800px){
+    .point{
+        background-color: #ffffff;
+    }
+
+    .point-containers{
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .point-item{
+        width: 30%;
+        padding-right: 2%;
+    }
+
+    .point-item p{
+        text-align: justify;
+    }
+
+    .point-item:last-child{
+        padding: 0;
+    }
+
+    .img-point2{
+        margin: auto;
+        /* text-align: center; */
+            width: 100%;/* 100%なので画像は中央にくる */
+            height: auto;/* autoにすることで縦横比を調整 */
+        }
+
+    .QandA-idea-containers{
+        margin: auto;
+        padding: 5%;
+        display: flex;
+    }
+
+    .QandA-idea-item{
+        padding-right: 2%;
+        max-width: 400px;
+    }
+
+    .QandA-idea-item:last-child{
+        padding-right: 0;
+
+    }
+
+}

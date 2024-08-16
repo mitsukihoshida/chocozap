@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットCSS style.cssよりも上に-->
-        <link rel="stylesheet" href="indfex.css">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <header>
@@ -29,8 +29,8 @@
                 </h2>
                 
                 <div class="QandA">
-                    <div class="question">
-                        <h3>
+                    <div class="question-answer">
+                        <h3 class="question">
                             急な体調不良や怪我をしたら、どうすればいいの？
                         </h3>
                         <p>
@@ -38,103 +38,120 @@
                             このAIカメラは<em>24時間365日</em>遠隔監視センターへ連携されています。
                         </p>
                     </div>
-                    
-                    <h3>
-                        point1
-                    </h3>
-                    
-                    <div class="QandA-1-point1-containers">
-                        <div class="QandA-1-point1-item">
-                            <img class="img-point1"  src="images/Q&A1_point1-1.jpeg" alt="異変画像"/>
-                            <p>
-                                <strong>異変</strong><br>倒れている人、
-                                <br>動かない人などを検知
-                            </p>
+                    <div class="point-containers">
+                        <div class="point-item">
+                            <h3 class="point">
+                                point1
+                            </h3>
+                            
+                            <div class="QandA-1-point1-containers">
+                                <div class="QandA-1-point1-item">
+                                    <img class="img-point1"  src="images/Q&A1_point1-1.jpeg" alt="異変画像"/>
+                                    <p>
+                                        <strong>異変</strong><br>倒れている人、動かない人などを検知
+                                    </p>
+                                </div>
+                                <div class="QandA-1-point1-item">
+                                    <img class="img-point1" src="images/Q&A1_point1-2.jpeg" alt="検知画像"/>
+                                    <p>
+                                        <strong>検知</strong><br>リアルタイムにスタッフに通知
+                                    </p>
+                                </div>
+                                <div class="QandA-1-point1-item">
+                                    <img class="img-point1"  src="images/Q&A1_point1-3.jpeg" alt="緊急対応画像"/>
+                                    <p>
+                                        <strong>緊急対応</strong><br>通報など然るべき対応を実施
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="QandA-1-point1-item">
-                            <img class="img-point1" src="images/Q&A1_point1-2.jpeg" alt="検知画像"/>
-                            <p>
-                                <strong>検知</strong><br>リアルタイムに
-                                <br>スタッフに通知
-                            </p>
+                        <div class="point-item">
+                            <h3 class="point">
+                                point2
+                            </h3>
+                                <p class="QandA-1-point3-answers-item">
+                                    <strong>トラブルになりやすい箇所は強化</strong>してモニタリングを行っています。
+                                </p>
+                                <img class="img-point2" src="images/Q&A1_point2.png"/>
                         </div>
-                        <div class="QandA-1-point1-item">
-                            <img class="img-point1"  src="images/Q&A1_point1-3.jpeg" alt="緊急対応画像"/>
-                            <p>
-                                <strong>緊急対応</strong><br>通報など
-                                <br>然るべき対応を実施
-                            </p>
+                        <div class="point-item">
+                            <h3 class="point">
+                                point3
+                            </h3>
+                            <!-- <div class="QandA-1-point3-answers"> -->
+                                <p class="QandA-1-point3-answers-item">
+                                    全店舗に<strong>24時間365日</strong>繋がる緊急連絡先も掲示。
+                                </p>
+                                <p class="QandA-1-point3-answers-item">
+                                    <strong>RIZAPによる巡回</strong>も実施。
+                                </p>
+                            <!-- </div> -->
+                            <div class="QandA-1-point3-containers">
+                                <div class="QandA-1-point3-item">
+                                    <p>
+                                        ※
+                                    </p>
+                                </div>
+                                <div class="QandA-1-point3-item">
+                                    <p id="security">    
+                                        カメラ設置箇所、設置台数、AIが反応する基準について、
+                                    </p>
+                                    <p>
+                                        セキュリティ保全の観点からお問い合わせいただいても具体的な<br>
+                                        回答は致し兼ねますので予めご了承ください。
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                        
-                    <h3>
-                        point2
-                    </h3>
-                        <p>
-                            <strong>トラブルになりやすい箇所は強化</strong>して
-                            <br>モニタリングを行っています。
-                        </p>
-                        <img class="img-point2" src="images/Q&A1_point2.png"/>
-                    <h3>
-                        point3
-                    </h3>
-                        <p class="QandA-1-point3-answer">
-                            <strong>全店舗に24時間365日繋がる</strong>
-                            <br>緊急連絡先も掲示。
-                            <br><br><strong>RIZAPによる巡回も実施。</strong>
-                        </p>
-                        <div class="QandA-1-point3-containers">
-                            <div class="QandA-1-point3-item">
-                                <p>
-                                    ※
-                                </p>
-                            </div>
-                            <div class="QandA-1-point3-item">
-                                <p id="security">    
-                                    カメラ設置箇所、設置台数、AIが反応する基準について、
-                                </p>
-                                <p>
-                                    セキュリティ保全の観点からお問い合わせいただいても具体的な
-                                    回答は致し兼ねますので予めご了承ください。
-                                </p>
-                            </div>
+                    
                         </div>
                 </div>
                 <div class="QandA">
-                    <div class="question">
-                        <h3>
+                    <div class="question-answer">
+                        <h3 class="question">
                             無人店舗だと、<br>衛生面が気になる•••
                         </h3>
                         <p>
-                            A. 安全安心で清潔感のある空間を維持するために
-                            <br>清掃対策・感染症対策を実施しております。
+                            A. 安全安心で清潔感のある空間を維持するために清掃対策・感染症対策を実施しております。
                         </p>
                     </div>
-                    <p>
-                        <感染症対策>
-                    </p>
-                        <ul>
-                            <li>施設利用時はマスク着用を推奨</li>
-                            <li>ウェットシートを設置</li>
-                        </ul>
-                    <p>
-                        ※マシントレーニング前に必ず除菌してからマシンをご利用ください
-                    </p>
-
-                    <p>
-                        <清掃対策><br>
-                        平均1.7回/日の頻度で清掃を行なっています。<br>
-                        ※2023年10月調べ
-                    </p>
+                    <div class="QandA-idea-containers">
+                        <div class="QandA-idea-item">
+                            <ul>
+                                <p class="measures">
+                                    <感染症対策>
+                                </p>
+                                <li>施設利用時はマスク着用を推奨</li>
+                                <li>ウェットシートを設置</li>
+                                <p class="notes">
+                                    ※マシントレーニング前に必ず除菌してからマシンをご利用ください
+                                </p>
+                            </ul>
+                        </div>
+                        <div class="QandA-idea-item">
+                            <ul>
+                                <p class="measures">
+                                    <清掃対策>
+                                </p>
+                                <p>
+                                    平均1.7回/日の頻度で清掃を行なっています。
+                                </p>
+                                <p class="notes">
+                                    ※2023年10月調べ
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </article>
         </main>
         <footer>
             <footer>
-                <h3 class="information">
+                <h2 class="information">
                     Information
-                </h3>
-                <table>
+                </h2>
+                <table class="info">
                     <tr>
                         <th rowspan="2">住所</th>
                         <td>〒160-0023</td>
@@ -154,7 +171,7 @@
                 </table>
                 <div class="copyright">
                     <small>
-                        &copy;RIZAP GROUP 
+                        &copy; RIZAP GROUP 
                     </small>
                 </div>
             </footer>
