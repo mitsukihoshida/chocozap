@@ -162,6 +162,7 @@
         font-size: 1.2rem;
     }
 /* footer */
+
     .info{
         width: 100%;
         max-width: 544px;/* 最大でも544pxの幅(width100%と基本セット) */
@@ -188,6 +189,10 @@
     }
 
 @media(min-width:800px){
+    html{
+        font-size: 105%;
+    }
+
     .point{
         background-color: #ffffff;
     }
